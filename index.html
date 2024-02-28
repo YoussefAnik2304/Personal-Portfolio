@@ -109,6 +109,8 @@
                 Software engineering student at National School of Applied Sciences of Al-Hoceima (ENSAH)
               </p>
               <a href="#contact" class="hero__contact underline">Contact me</a>
+              <button class="cv" id="cv"> <span>🔗 Resume</span>
+              </button>  
             </div>
           </div>
         </div>
@@ -369,6 +371,29 @@
         </nav>
       </div>
     </footer>
+    <script>
+      function downloadPDF() {
+        // Replace 'path/to/your/pdf.pdf' with the actual path to your PDF file
+        const pdfUrl = './resume.pdf';
+        
+        // Create a temporary anchor element
+        const link = document.createElement('a');
+        link.href = pdfUrl;
+        link.download = 'Anik_Youssef_resume.pdf'; // Set the name of the downloaded file
+        
+        // Append the anchor element to the document body
+        document.body.appendChild(link);
+        
+        // Trigger the click event on the anchor element
+        link.click();
+        
+        // Remove the anchor element from the document body
+        document.body.removeChild(link);
+      }
+      
+      // Add click event listener to the button
+      document.getElementById('cv').addEventListener('click', downloadPDF);
+    </script>
   </body>
   <script src="https://web3forms.com/client/script.js" async defer></script>
   
