@@ -1,12 +1,12 @@
 /* GLOBAL */
 
 :root {
-  /* Default light mode variables */
-  --bg-body: hsl(0, 0%, 76%);
-  --bg-body2: hsl(0, 0%, 88%);
+  --bg-body: hsl(0, 0%, 8%);
+  --bg-body2: hsl(0, 0%, 14%);
+  --text1: hsl(0, 0%, 100%);
+  --text2: hsl(0, 0%, 85%);
   --accent: hsl(153, 71%, 59%);
-  --text1: hsl(0, 0%, 15%);
-  --text2: hsl(0, 0%, 0%);
+  /* Default light mode variables */
   --invalid: hsl(7, 100%, 68%);
   --fs-18: 1.125rem;
   --fs-88: 5.5rem;
@@ -23,10 +23,11 @@
 
 /* Dark mode styles */
 :root.dark-mode {
-  --bg-body: hsl(0, 0%, 8%);
-  --bg-body2: hsl(0, 0%, 14%);
-  --text1: hsl(0, 0%, 100%);
-  --text2: hsl(0, 0%, 85%);
+  --bg-body: hsl(0, 0%, 76%);
+  --bg-body2: hsl(0, 0%, 88%);
+
+  --text1: hsl(0, 0%, 15%);
+  --text2: hsl(0, 0%, 0%);
 }
 i{
   color: #000;
